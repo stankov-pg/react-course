@@ -1,7 +1,8 @@
 import ImageShow from './ImageShow.jsx';
+import './ImageList.css';
 
 function ImageList({ images }) {
-  return <div>
+  return <div className='image-list'>
     {images.map(image => {
       return <ImageShow key={image.id} image={image} />
     })}
